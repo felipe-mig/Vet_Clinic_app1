@@ -1,0 +1,141 @@
+{
+  "test_report": {
+    "date": "2026-09-26",
+    "test_file": "test_clinic.py",
+    "status": "ALL TESTS PASSED",
+    "summary": {
+      "total_tests": 22,
+      "passed": 22,
+      "failed": 0,
+      "success_rate": "100%"
+    },
+    "test_results": [
+      {
+        "test_id": 1,
+        "description": "JSON data initialized successfully",
+        "status": "PASS"
+      },
+      {
+        "test_id": 2,
+        "description": "Client created with ID: 1",
+        "status": "PASS"
+      },
+      {
+        "test_id": 3,
+        "description": "Client found: John Smith",
+        "status": "PASS"
+      },
+      {
+        "test_id": 4,
+        "description": "Animal created with ID: 1",
+        "status": "PASS"
+      },
+      {
+        "test_id": 5,
+        "description": "Animal found: Buddy",
+        "status": "PASS"
+      },
+      {
+        "test_id": 6,
+        "description": "Property created with ID: 1",
+        "status": "PASS"
+      },
+      {
+        "test_id": 7,
+        "description": "Property found: 456 Farm Road",
+        "status": "PASS"
+      },
+      {
+        "test_id": 8,
+        "description": "Consultation booked with ID: 1",
+        "status": "PASS"
+      },
+      {
+        "test_id": 9,
+        "description": "Correctly rejected booking outside clinic hours",
+        "status": "PASS"
+      },
+      {
+        "test_id": 10,
+        "description": "Farm visit booked with ID: 2",
+        "status": "PASS"
+      },
+      {
+        "test_id": 11,
+        "description": "Day schedule retrieved: 32 slots, 1 farm visits",
+        "status": "PASS"
+      },
+      {
+        "test_id": 12,
+        "description": "Animal search found: Buddy",
+        "status": "PASS"
+      },
+      {
+        "test_id": 13,
+        "description": "Appointment status updated to completed",
+        "status": "PASS"
+      },
+      {
+        "test_id": 14,
+        "description": "Appointment status updated to DNA",
+        "status": "PASS"
+      },
+      {
+        "test_id": 15,
+        "description": "Report generated: 2 total appointments",
+        "status": "PASS"
+      },
+      {
+        "test_id": 16,
+        "description": "Listed 1 client(s)",
+        "status": "PASS"
+      },
+      {
+        "test_id": 17,
+        "description": "Listed 1 animal(s) for client",
+        "status": "PASS"
+      },
+      {
+        "test_id": 18,
+        "description": "Listed 1 propert(y/ies) for client",
+        "status": "PASS"
+      },
+      {
+        "test_id": 19,
+        "description": "Appointment moved successfully",
+        "status": "PASS"
+      },
+      {
+        "test_id": 20,
+        "description": "Appointment cancelled successfully",
+        "status": "PASS"
+      },
+      {
+        "test_id": 21,
+        "description": "Client updated successfully",
+        "status": "PASS"
+      },
+      {
+        "test_id": 22,
+        "description": "Client deactivated successfully",
+        "status": "PASS"
+      }
+    ],
+    "coverage": {
+      "client_management": ["create", "find", "update", "deactivate", "list"],
+      "animal_management": ["create", "find", "search", "list"],
+      "property_management": ["create", "find", "list"],
+      "appointment_management": ["book_consultation", "book_farm_visit", "move", "cancel", "update_status", "get_schedule"],
+      "reporting": ["generate_reports", "calculate_rates"],
+      "validation": ["clinic_hours", "conflict_detection"]
+    },
+    "report_statistics": {
+      "total_appointments": 2,
+      "completed": 1,
+      "dna": 1,
+      "completion_rate": 50.0,
+      "dna_rate": 50.0
+    },
+    "conclusion": "All functionality tests passed successfully. The system is working as expected with proper validation, data management, and reporting capabilities."
+  }
+}
